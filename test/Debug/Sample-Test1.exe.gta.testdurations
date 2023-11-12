@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\严添辰\Desktop\test\Debug\Sample-Test1.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="F_k_u_v.type_test" Duration="1" />
+    <TestDuration Test="u_v.size_test" Duration="1" />
+    <TestDuration Test="type_test.F_k_u_v" Duration="1" />
+    <TestDuration Test="size_test.u_v" Duration="1" />
+    <TestDuration Test="answer_test.u_v_time0" Duration="467649" />
+  </TestDurations>
+</GtaTestDurations>

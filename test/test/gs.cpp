@@ -5,7 +5,6 @@
 #include <fstream>
 #include <sstream>
 #include <cmath>
-using namespace std;
 
 // Define simulation parameters
 const int width = 256;                // Width of the grid
@@ -16,7 +15,7 @@ double F = 0.03;                      // Feed rate
 double k = 0.0648;                    // Kill rate
 double threshold = 0.1;
 const double dt = 0.06;               // Time step
-const int numIterations = 1000;		//***10000
+const int numIterations = 10000;
 const int outputInterval = 100;      // Output every 1000 iterations
 
 // Initialize grid and constants
@@ -128,7 +127,7 @@ int main(int argc, char* argv[]) {
 	// Main simulation loop
 	for (int iteration = 0; iteration < numIterations; ++iteration) {
 		simulateStep();
-//		cout << iteration<<endl;
+
 		// Periodically write to VTK file
 		if (iteration % outputInterval == 0) {
 			writeVTKFile(iteration);
@@ -141,4 +140,3 @@ int main(int argc, char* argv[]) {
 
 	return 0;
 }
-

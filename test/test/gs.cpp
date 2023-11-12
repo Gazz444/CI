@@ -75,7 +75,7 @@ void simulateStep() {
 	std::vector<std::vector<double>> nextV = v;
 
 	double laplaceU = 0.0, laplaceV = 0.0, dU = 0.0, dV = 0.0;
-	double a, b;
+	double a = 0, b;
 	for (int x = 1; x < width - 1; ++x) {
 		for (int y = 1; y < height - 1; ++y) {
 
